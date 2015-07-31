@@ -16,6 +16,11 @@ faded-yellow = FFFCD3
 faded-brown = E8CFB4
 faded-pink = FFC3CF
 
+facebook-color = #3b5998
+twitter-color = #55ACEE
+LinkedIn-color = #0077B5
+Github = #333333
+
 _____________________________
 
 
@@ -38,3 +43,15 @@ body {
 }
 
 /* Modules will scale with document */
+.fa-facebook {
+	color: #3b5998;
+}
+.fa-twitter{
+	color: #55ACEE;
+}
+.fa-linkedin{
+	color: #0077B5;
+}
+.fa-github{
+	color: #333333;
+}
