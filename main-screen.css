@@ -1,0 +1,88 @@
+/* Storage:
+
+_____________________________Colors
+
+Normal Colors: https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=4&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.4404617683169151,0.8473045723646647,1,0.4008202091683927,0.91,0.49165311229604036,1,0.9772432521868214,0.4904617683169151,0.91,0.6792978607714358,0.4008202091683927,1,0.4274508806817878,0.4817725393616298&swatchOrder=0,1,2,3,4
+sky-blue = 70D8FF
+light-green = 66E87D
+yellow = FFF97D
+orange = E8AD66
+pale-red = FF6D7B
+
+Faded Colors: https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=2&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.775918208986073,0.9523246670016677,1,0.7060855701773264,0.91,0.7292737385264519,1,0.9882150474338461,0.825918208986073,0.91,0.8108136501391285,0.7060855701773264,1,0.7629073213509459,0.8124921238830154&swatchOrder=0,1,2,3,4
+faded-blue = C6F3FF
+faded-green = B4E8BA
+faded-yellow = FFFCD3
+faded-brown = E8CFB4
+faded-pink = FFC3CF
+
+_____________________________
+
+
+*/
+
+
+/* Document level adjustments */
+html {
+  font-size: 17px;
+}
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+/* Modules will scale with document */
+.navbar {
+	background-color: black;
+	color: white;
+	padding:0px;
+	border: 3px solid #333333;
+	margin: auto;
+}
+.navbar.navbar ul a{
+	color: #FFFCD3;
+}
+.dropdown-menu {
+	background-color: black;
+	color: white;
+	padding:0px;
+	border: 3px solid #333333;
+	margin: auto;
+}
+
+.navigation {
+  font-size: 1.5rem;
+}
+.footer {
+  font-size: 0.75rem;
+}
+.sidebar {
+  font-size: 0.85rem;
+}
+
+.jumbotron {
+	background-color: #C6F3FF;
+	/*
+	background-image: url(images/unknown.jpg);
+	background-size: ;
+	background-attachment: url(images/unknown.jpg);
+	*/
+}
+
+.jumbotron h1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Type will scale with modules */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
