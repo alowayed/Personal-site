@@ -49,3 +49,7 @@ body {
 .fa-github{color: #333333;}
 /* Change social icon colors (end)  */
 
+blockquote {
+	opacity: 0.3;
+}
+
