@@ -11,16 +11,13 @@ $(document).ready(function(){
   /* Quote fade (end) */
 
 
-
-  $("blockquote")
-  	.mouseenter(function(){
-  		$(this).fadeTo("5000000", 0);
-  	})
-		.mouseleave(function(){
-  		$("blockquote").load("quotes.txt");
-  		$("blockquote").fadeTo("5000000", 1);
-  	});
-
+  $("blockquote").click(function(){
+  	$(this).fadeTo("5000000", 0 ,function(){
+  			$(this).load('quotes.html');
+  			$(this).fadeTo("5000000", 0.5);
+  		});
+  });
+  
 
 
   /*

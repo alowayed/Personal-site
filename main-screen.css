@@ -50,6 +50,7 @@ body {
 /* Change social icon colors (end)  */
 
 blockquote {
-	opacity: 0.3;
+	opacity: 0.5;
+	cursor: pointer;
 }
 
