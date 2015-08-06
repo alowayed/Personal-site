@@ -1,22 +1,13 @@
 $(document).ready(function(){
-    
 
 	/* Quote fade (start) */
-	/*
-  $("blockquote").hover(function(){
-  	$("blockquote").fadeTo("50000", 0.5);
-  	}, function(){
-  	$("blockquote").fadeTo("50000",1);
-  });
-  /* Quote fade (end) */
-
-var quotes = [
+	var quotes = [
 		'I told my girlfriend she drew her eyebrows to high. <br>She seemed surprised.',
 		'I bought some shoes from a drug dealer. \
 			<br>I don\'t know what he laced them with, but I\'ve been tripping all day.'
 	];
 
-var jokes = [
+	var jokes = [
 		'I told my girlfriend she drew her eyebrows to high. <br>She seemed surprised.',
 		'I bought some shoes from a drug dealer. \
 			<br>I don\'t know what he laced them with, but I\'ve been tripping all day.',
@@ -35,7 +26,20 @@ var jokes = [
 		'What do you call a nun in a wheelchair?\
 			<br>Virgin Mobile.',
 		'WHAT DO WE WANT?!?! LOW FLYING AIRPLANE NOISES!!!\
-			<br>WHEN DO WE WANT \'EM?!?! NEEEEEYYYYYOOOOOOWWWW!'
+			<br>WHEN DO WE WANT \'EM?!?! NEEEEEYYYYYOOOOOOWWWW!',
+		'What happened to the cow that jumped over the barbed wire fence?\
+			<br>Udder destruction.',
+		'What is the resemblance between a green apple and a red apple?\
+			<br>They\'re both red except for the green one.',
+		'How do you make holy wanter?\
+			<br>Put it in a pot and boil the hell out of it.',
+		'Why did Star Wars episode 4, 5 and 6 come before 1, 2 and 3?\
+			<br>Because in charge of scheduling, Yoda was',
+		'What do you call a black man who flies a plane?\
+			<br>A pilot, you racist.',
+		'If you\'re ever attacked by a gang of clowns, go for the juggler.',
+		'Sometimes I tuck my knees into my chest and lean forward.\
+			<br>That\'s just how I roll.'
 	];
 
 
@@ -49,9 +53,9 @@ var jokes = [
 			$(this).fadeTo("5000000", 1);
 		});
 	});
-	/* Quote fade (start) */
+	/* Quote fade (end) */
 
-
+	/* Jokes fade (start) */
 	$("#full-joke").click(function(){
 		$(this).fadeTo("5000000", 0 ,function(){
 			random_joke = jokes[Math.floor(Math.random() * jokes.length)];
@@ -59,6 +63,7 @@ var jokes = [
 			$(this).fadeTo("5000000", 1);
 		});
 	});
+	/* Jokes fade (end) */
   
 
 

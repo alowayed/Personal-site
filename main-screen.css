@@ -40,6 +40,8 @@ html {
 
 body {
 	padding-top: 70px;
+	cursor: url('muhab-small.png'), auto;
+
 }
 
 /* Change social icon colors (start)  */
@@ -51,6 +53,6 @@ body {
 
 blockquote {
 	opacity: 0.5;
-	cursor: pointer;
+	cursor: url('muhab-small.png'), auto;
 }
 
