@@ -31,7 +31,11 @@ var jokes = [
 			<br>Someone who lays awaks at night wondering if there is a dog.',
 		'And God said to John,\
 			<br>"Come forth and you shall be granted eternal life."\
-			<br>But John came fifth and won a toaster.'
+			<br>But John came fifth and won a toaster.',
+		'What do you call a nun in a wheelchair?\
+			<br>Virgin Mobile.',
+		'WHAT DO WE WANT?!?! LOW FLYING AIRPLANE NOISES!!!\
+			<br>WHEN DO WE WANT \'EM?!?! NEEEEEYYYYYOOOOOOWWWW!'
 	];
 
 
