@@ -40,7 +40,6 @@ html {
 
 body {
 	padding-top: 70px;
-	cursor: url('muhab-small.png'), auto;
 
 }
 
@@ -53,6 +52,5 @@ body {
 
 blockquote {
 	opacity: 0.5;
-	cursor: url('muhab-small.png'), auto;
 }
 
