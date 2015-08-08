@@ -54,3 +54,9 @@ blockquote {
 	opacity: 0.5;
 }
 
+.img-responsive {
+	border-radius: 5%;
+	max-width: 100%;
+	style:foat;
+}
+
