@@ -66,8 +66,21 @@ $(document).ready(function(){
 	/* Jokes fade (end) */
   
 
+	var fixmeTop = $('.bs-docs-sidebar').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop() + 70;
+		if (currentScroll >= fixmeTop) {
+			$('.bs-docs-sidebar').css({
+				position: 'fixed',
+				top: '70px',
+			});
+	    } else {
+	    	$('.bs-docs-sidebar').css({
+	    		position: 'static'
+	    	});
+	    }
+	});
 
-
-    
+   
 
 });
