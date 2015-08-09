@@ -1,0 +1,68 @@
+CS:
+
+	Python:
+	See: pygame (projects section)
+	See: Ion Pump data analysis (experience section)
+	See: Ion Cavity networking and data analysis (experience section)
+
+
+	Mathematica:
+	Used for: 8.044
+
+
+	Matlab:
+	See: 6.152 (in projects section)
+
+
+	HTML:
+	Used for: this site
+
+	CSS:
+	Used for: this site
+
+	JavaScript:
+	(JQuery) Used for: this site
+
+
+EE:
+
+	Devices used:
+
+
+	Signal processing:
+	See: Ion Cavity AC/DC converter and analysis (experience section)
+	See: Heart beat monitor (projects section)
+
+	Stable control systems:
+	See: Ion Cavity stabalizing algorithm and control system (experience section)
+
+	Clean room skills:
+	See: KAUST Solar Cell fabrication and testing (experience section)
+	See: 
+
+
+Mechanical Design & Fabrication:
+
+	Metal/Wood cutting and fastening:
+	See: Infinite door (projects section)
+
+	Mechanical theory:
+	See: Levitating top (projects section)
+
+Buisness:
+
+	Microsoft Office:
+	See: time at Booz Allen (Experience section)
+
+
+Comunication:
+	
+	Presenting:
+	Used in: 6.UAT
+	See: 6.152
+
+	Writing:
+	Used in: Minds and Machines wirings
+	Used in: Psychology writings
+	Used in: Physics in the 20th century
+	Used in: Early Christianity writings

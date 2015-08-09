@@ -70,7 +70,7 @@ $(document).ready(function(){
 	});
 	/* Jokes fade (end) */
   
-
+	/* Left navbar stick to scroll (start) */
 	var fixmeTop = $('.bs-docs-sidebar').offset().top;
 	$(window).scroll(function() {
 		var currentScroll = $(window).scrollTop() + 70;
@@ -84,7 +84,18 @@ $(document).ready(function(){
 	    		position: 'static'
 	    	});
 	    }
+
+	    var toActivate = $('.bs-docs-sidenav > li > a').offset().top;
+	    if (currentScroll >= toActivate) {
+	    	$('.bs-docs-sidenav > li > ul').show();
+	    } else {
+	    	$('.bs-docs-sidenav > li > ul').hide();
+	    }
+
 	});
+	/* Left navbar stick to scroll (end) */
+
+
 
    
 
