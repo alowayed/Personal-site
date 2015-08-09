@@ -42,7 +42,11 @@ $(document).ready(function(){
 			<br>That\'s just how I roll.'
 	];
 
-
+	
+	$("#full-joke").hide('clip',10, function(){
+		$(this).show('clip',1000);
+		$('blockquote').fadeTo(2000, 1);
+	});
 
 
 	/* Quote fade (start) */
@@ -50,7 +54,8 @@ $(document).ready(function(){
 		$(this).fadeTo("5000000", 0 ,function(){
 			random_quote = quotes[Math.floor(Math.random() * quotes.length)];
 			$(this).children('blockquote').children('h3').html(random_quote);
-			$(this).fadeTo("5000000", 1);
+			$(this).show('clip',1000);
+			$('blockquote').fadeTo(2000, 1);
 		});
 	});
 	/* Quote fade (end) */
