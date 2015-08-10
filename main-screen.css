@@ -43,6 +43,15 @@ body {
 
 }
 
+.navbar {
+	box-shadow: 0 15px 15px -10px gray;
+	transition: box-shadow 1s;
+}
+
+.navbar:hover {
+	box-shadow: 0 30px 30px -15px gray;
+}
+
 /* Change social icon colors (start)  */
 .fa-facebook {color: #3b5998;}
 .fa-twitter{color: #55ACEE;}
@@ -54,10 +63,51 @@ blockquote {
 	opacity: 0;
 }
 
+.bs-docs-sidenav {
+	box-shadow: 15px 15px 15px -10px gray;
+	transition: box-shadow 1s;
+}
+
+.bs-docs-sidenav:hover {
+	box-shadow: 30px 30px 30px -15px gray;
+}
+
+.bs-docs-sidenav li {
+	font-size: 15px;
+}
+
+.bs-docs-sidenav a {
+		transition: box-shadow 2s;
+}
+
+.bs-docs-sidenav a:hover {
+	box-shadow: 0 20px 20px -10px gray;
+}
+
+.bs-docs-sidenav li li {
+	font-size: 12px;
+/*	text-indent: 1em;
+*/}
+
+
+
 .img-responsive {
-	border-radius: 5%;
 	max-width: 100%;
-	style:foat;
+	style: float;
+	box-shadow: 0 15px 15px -10px gray;
+}
+
+.img-right {
+	box-shadow: -20px 20px 20px -10px gray;
+	transition: box-shadow 1s;
+}
+
+.img-right:hover {
+	box-shadow: -40px 40px 40px -20px gray;
+}
+
+.img-left {
+	box-shadow: 20px 20px 20px -10px gray;
 }
 
 

@@ -83,36 +83,33 @@ $(document).ready(function(){
 			});
 			var toActivate = $('#section-CS').visible( true );
 			if (toActivate) {
-		    	$('#sidenav-CS').show();
+		    	$('#sidenav-CS').fadeIn(500);
 		    } else {
-		    	$('#sidenav-CS').hide();
+		    	$('#sidenav-CS').fadeOut(500, function(){
+		    		$('#sidenav-CS').hide();
+		    	});
 		    }
 	    } else {
 	    	$('.bs-docs-sidebar').css({
 	    		position: 'static'
 	    	});
-	    	$('#sidenav-CS').hide();
+	    	$('#sidenav-CS').fadeOut(500, function(){
+		    	$('#sidenav-CS').hide();
+		    });
 	    }
-
-
-
-	    // var toActivate = $('.bs-docs-sidenav > li > a').offset().top;
-	    // if (currentScroll >= toActivate) {
-	    // 	$('.bs-docs-sidenav > li > ul').show();
-	    // } else {
-	    // 	$('.bs-docs-sidenav > li > ul').hide();
-	    // }
 
 	});
 	/* Left navbar stick to scroll (end) */
 
-	
-	// $(window).scroll(function() {
-	//     if (toActivate) {
-	//     	alert('hello');
-	//     	// $('.bs-docs-sidenav > li > ul').show();
-	//     }
+	/* Image hover (start) */
+	// $('.img-right').hover(function(){
+	// 	$('.img-right').css({
+	// 		'box-shadow': '-30px 30px 30px -20px gray'
+	// 	});
 	// });
+
+	/* Left hover (end) */
+
 
 
 
