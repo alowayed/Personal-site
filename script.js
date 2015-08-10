@@ -69,6 +69,8 @@ $(document).ready(function(){
 		});
 	});
 	/* Jokes fade (end) */
+
+	$('.bs-docs-sidenav > li > ul').hide();
   
 	/* Left navbar stick to scroll (start) */
 	var fixmeTop = $('.bs-docs-sidebar').offset().top;
@@ -79,21 +81,38 @@ $(document).ready(function(){
 				position: 'fixed',
 				top: '70px',
 			});
+			var toActivate = $('#section-CS').visible( true );
+			if (toActivate) {
+		    	$('#sidenav-CS').show();
+		    } else {
+		    	$('#sidenav-CS').hide();
+		    }
 	    } else {
 	    	$('.bs-docs-sidebar').css({
 	    		position: 'static'
 	    	});
+	    	$('#sidenav-CS').hide();
 	    }
 
-	    var toActivate = $('.bs-docs-sidenav > li > a').offset().top;
-	    if (currentScroll >= toActivate) {
-	    	$('.bs-docs-sidenav > li > ul').show();
-	    } else {
-	    	$('.bs-docs-sidenav > li > ul').hide();
-	    }
+
+
+	    // var toActivate = $('.bs-docs-sidenav > li > a').offset().top;
+	    // if (currentScroll >= toActivate) {
+	    // 	$('.bs-docs-sidenav > li > ul').show();
+	    // } else {
+	    // 	$('.bs-docs-sidenav > li > ul').hide();
+	    // }
 
 	});
 	/* Left navbar stick to scroll (end) */
+
+	
+	// $(window).scroll(function() {
+	//     if (toActivate) {
+	//     	alert('hello');
+	//     	// $('.bs-docs-sidenav > li > ul').show();
+	//     }
+	// });
 
 
 
