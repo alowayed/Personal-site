@@ -36,13 +36,17 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <!-- Top nav-bar left side (start)-->
           <ul class="nav navbar-nav">
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Resume.pdf">Resume</a></li>
+            <li id='education-button'><a href="education.html">Education</a></li>
+            <li id='experience-button'><a href="experience.html">Experience</a></li>
+            <li id='projects-button'><a href="projects.html">Projects</a></li>
+            <li id='skills-button'><a href="skills.html">Skills</a></li>
+            <li id='resume-button'><a href="Resume.pdf">Resume</a></li>
           </ul>
+          <!-- Top nav-bar left side (end)-->
+
           <!-- <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
@@ -50,23 +54,23 @@
             <button type="submit" class="btn btn-default">Submit</button>
           </form> -->
 
-          <!-- Nav-bar right side (Start)-->
+          <!-- Top nav-bar right side (start)-->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="laughs.html">Laughs</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
 
-            <!-- Nav-bar Drop down menu (Start)-->
+            <!-- Top nav-bar drop down menu (Start)-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 
-                <!-- Direct contact buttons (Start)-->
+                <!-- Direct contact buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Direct</a></li>
                 <li><a href="#">Email</a></li>
                 <li><a href="#">Call</a></li>
-                <!-- Direct contact end (Start)-->
+                <!-- Direct contact buttons (end)-->
 
-                <!-- Social Media buttons (Start)-->
+                <!-- Social Media buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Social Media</a></li>          
                 <li><a href="https://www.facebook.com/yousef.alowayed">
                     <i class="fa fa-facebook"> &nbsp;&nbsp; facebook</i></a>
@@ -80,14 +84,14 @@
                 <li><a href="https://github.com/alowayed">
                     <i class="fa fa-github"> &nbsp;&nbsp;Github</i></a>
                 </li>
-                <!-- Social Media buttons (End)-->
+                <!-- Social Media buttons (end)-->
 
               </ul>
             </li>
-            <!-- Nav-bar Drop down menu (End)-->
+            <!-- Top nav-bar Drop down menu (end)-->
 
           </ul>
-          <!-- Nav-bar right side (End)-->
+          <!-- Top nav-bar right side (end)-->
 
         </div>
 
@@ -96,14 +100,14 @@
     <!-- Top nav bar (end) ======================================== -->
 
 
-    <!-- Quote (start) ======================================== -->
-    <div id='full-joke'>
+    <!-- Quote-skills (start) ======================================== -->
+    <div id='full-quote-skills'>
       <blockquote class='text-center'>
-        <h3><div id='joke'>"Write it. Shoot it. Publish it. Crochet it, saute it, whatever. MAKE."</div></h3>
-        <small><cite title="Source Title"><div id='joke-author'>Joss Whedon</div></cite></small>
+        <h3><div id='quote-skills'>"Jack of all trades, master of none. But in most cases, better than a master of one"</div></h3>
+        <small><cite title="Source Title"><div id='quote-skills-author'>Unknown</div></cite></small>
       </blockquote>
     </div>
-    <!-- Quote (end) ======================================== -->
+    <!-- Quote-skills (end) ======================================== -->
 
     <!-- Main body (start) ======================================== -->
     <div class='containter-fluid'>
@@ -185,6 +189,83 @@
           <!-- CS section (start) ======================================== -->
           <div id='section-CS'>
             <h2 class='text-center' id='title-CS'>Computer Science &amp; Software Engineering</h2>
+            <br>
+
+            <!-- Python (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center' id='title-CS-python'><img src='http://png-5.findicons.com/files/icons/2804/plex/512/python.png' width="35" height="35" align="middle"> Python</h3>
+              <br>
+              <h4>I've been using Python since high school. To me, it's the go-to when starting a project or assignmet. Although not as fast or memory efficent as C, for example, it has allowed me to rapidly build a variaty of applications and systems such as
+              </h4>
+              <br>
+                
+              <!-- Python projects (start) -->
+              <div class='row'>
+
+                <div class="col-md-4">
+                  <h5>A <a href='#'>game for 6.090 </a> using <a href='http://www.pygame.org/news.html'>PyGame </a></h5><h6>(Run <a href='https://www.dropbox.com/sh/o62ecu685e7oxsd/AABozH7puERRRoiQYj4M05HUa?dl=0'>'Final Project.py' </a> to start the game. Requires PyGame)</h6>
+                  <br>
+                  <img class='img-responsive img-left' style ='float' src="Images/projects/Dimentionality.png" />
+                </div>
+
+                <div class="col-md-4">
+                  <h5>A <a href='#'>program </a> that manipulated Excel data using the <a href='https://pypi.python.org/pypi/xlrd/0.9.2'>xlrd </a>package.</h5><h6>(helped identify leaky pipes and valves during my <a href='#'>UROP whith the Ion Pumps Group</a>)</h6><br>
+                  <img class='img-responsive img-center' style ='float' src="Images/experience/Ion pumps excel.png" />
+                </div>
+
+                <div class="col-md-4">
+                  <h5>A <a href='https://www.raspberrypi.org/'>Raspberry Pi </a><a href='#'>program </a>that read in <a href='http://elinux.org/RPi_Serial_Connection'>serial</a> inputs from a network, using <a href='https://docs.python.org/2/library/socket.html'>sockets</a>, and used the data to control a radio antenna</h5><h6>(helped stabelize atoms in a quantum computer during my <a href='#'>UROP whith the Quantum Computing Group</a>)</h6><br>
+                  <img class='img-responsive img-right' style ='float' src="Images/experience/Quanta RP.jpg" />
+                </div>
+
+              </div>
+              <!-- Python projects (end) -->
+
+            </div>
+            <!-- Python (end) -->
+
+            <!-- Mathematica (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center' id='title-CS-mathematica'><img src='http://xahlee.info/comp/Mathematica_logo/Mathematica_8_logo.png' width="35" height="35" align="middle"> Mathematica</h3>
+              <br>
+              <h4>
+              </h4>
+              <br>
+                
+              <!-- Mathematica projects (start) -->
+              <div class='row'>
+
+                <div class="col-md-4">
+                  <h5>A <a href='#'>game for 6.090 </a> using <a href='http://www.pygame.org/news.html'>PyGame </a></h5><h6>(Run <a href='https://www.dropbox.com/sh/o62ecu685e7oxsd/AABozH7puERRRoiQYj4M05HUa?dl=0'>'Final Project.py' </a> to start the game. Requires PyGame)</h6>
+                  <br>
+                  <img class='img-responsive img-left' style ='float' src="Images/projects/Dimentionality.png" />
+                </div>
+
+                <div class="col-md-4">
+                  <h5>A <a href='#'>program </a> that manipulated Excel data using the <a href='https://pypi.python.org/pypi/xlrd/0.9.2'>xlrd </a>package.</h5><h6>(helped identify leaky pipes and valves during my <a href='#'>UROP whith the Ion Pumps Group</a>)</h6><br>
+                  <img class='img-responsive img-center' style ='float' src="Images/experience/Ion pumps excel.png" />
+                </div>
+
+                <div class="col-md-4">
+                  <h5>A <a href='https://www.raspberrypi.org/'>Raspberry Pi </a><a href='#'>program </a>that read in <a href='http://elinux.org/RPi_Serial_Connection'>serial</a> inputs from a network, using <a href='https://docs.python.org/2/library/socket.html'>sockets</a>, and used the data to control a radio antenna</h5><h6>(helped stabelize atoms in a quantum computer during my <a href='#'>UROP whith the Quantum Computing Group</a>)</h6><br>
+                  <img class='img-responsive img-right' style ='float' src="Images/experience/Quanta RP.jpg" />
+                </div>
+
+              </div>
+              <!-- Mathematica projects (end) -->
+
+            </div>
+            <!-- Mathematica (end) -->
+
+          </div>
+          <!-- CS section (start) ======================================== -->
+
+          <br>
+          <br>
+
+          <!-- EE section (start) ======================================== -->
+          <div id='section-EE'>
+            <h2 class='text-center' id='title-EE'>Electrical Engineering</h2>
             <br>
 
             <!-- Solar cells in 6.152J (start) -->

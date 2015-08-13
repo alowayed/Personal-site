@@ -27,7 +27,7 @@ _____________________________
 */
 
 
-/* Document level adjustments */
+/* Document level adjustments (start) ============================== */
 html {
   font-size: 17px;
 }
@@ -42,7 +42,12 @@ body {
 	padding-top: 70px;
 
 }
+/* Document level adjustments (end) ============================== */
 
+
+/* Top nav-bar (start) ============================== */
+
+/* Top nav-bar shadow hover effect (start) */
 .navbar {
 	box-shadow: 0 15px 15px -10px gray;
 	transition: box-shadow 1s;
@@ -51,18 +56,86 @@ body {
 .navbar:hover {
 	box-shadow: 0 30px 30px -15px gray;
 }
+/* Top nav-bar shadow hover effect (end) */
 
-/* Change social icon colors (start)  */
+/* Top nav-bar shadow hover effect for buttons (start) */
+.navbar li {
+	transition: box-shadow 2s;
+}
+
+.navbar li:hover {
+	box-shadow: 20px 0px 20px -10px gray;
+}
+
+.navbar-right li:hover {
+	box-shadow: -20px 0px 20px -10px gray;
+}
+
+.navbar a {
+	transition: box-shadow 2s;
+}
+
+.navbar a:hover {
+	box-shadow: 0 20px 20px -10px gray;
+}
+/* Top nav-bar shadow hover effect for buttons (end) */
+
+
+/* Change social icon colors (start) */
 .fa-facebook {color: #3b5998;}
 .fa-twitter{color: #55ACEE;}
 .fa-linkedin{color: #0077B5;}
 .fa-github{color: #333333;}
-/* Change social icon colors (end)  */
+/* Change social icon colors (end) */
 
+/* Button colors (start) */
+#education-button {
+	background-color: #FFC3CF;
+	z-index: 4;
+}
+#experience-button {
+	background-color: #E8CFB4;
+	z-index: 3;
+}
+#projects-button {
+	background-color: #FFFCD3;
+	z-index: 2;
+}
+#skills-button {
+	background-color: #B4E8BA;
+	z-index: 1;
+}
+#resume-button {
+	background-color: #C6F3FF;
+	z-index: 0;
+}
+/* Button colors (end) */
+
+/* Top nav-bar (end) ============================== */
+
+
+/* Block quote (start) ============================== */
 blockquote {
-	opacity: 0;
+	opacity: 0.7;
+	box-shadow: 0 15px 15px -10px gray;
+	transition: box-shadow 1s;
 }
 
+blockquote:hover {
+	box-shadow: 0 30px 30px -15px gray;
+}
+/* Block quote (end) ============================== */
+
+
+/* Side navbar (start) ============================== */
+
+/* Side navbar hide sub sections (start) */
+.bs-docs-sidenav > li > ul {
+	display: none;
+}
+/* Side navbar hide sub sections (end) */
+
+/* Side navbar hover shadow effect (start) */
 .bs-docs-sidenav {
 	box-shadow: 15px 15px 15px -10px gray;
 	transition: box-shadow 1s;
@@ -71,32 +144,42 @@ blockquote {
 .bs-docs-sidenav:hover {
 	box-shadow: 30px 30px 30px -15px gray;
 }
+/* Side navbar hover shadow effect (end) */
 
+/* Side navbar text (start) */
 .bs-docs-sidenav li {
 	font-size: 15px;
-}
-
-.bs-docs-sidenav a {
-		transition: box-shadow 2s;
-}
-
-.bs-docs-sidenav a:hover {
-	box-shadow: 0 20px 20px -10px gray;
 }
 
 .bs-docs-sidenav li li {
 	font-size: 12px;
 /*	text-indent: 1em;
 */}
+/* Side navbar text (end) */
+
+/* Side navbar hover shadow effect for buttons (start) */
+.bs-docs-sidenav a {
+	transition: box-shadow 2s;
+}
+
+.bs-docs-sidenav a:hover {
+	box-shadow: 0 20px 20px -10px gray;
+}
+/* Side navbar hover shadow effect for buttons (end) */
+
+/* Side navbar (end) ============================== */
 
 
+/* Images (start) ============================== */
 
+/* Images general style (start) */
 .img-responsive {
 	max-width: 100%;
 	style: float;
-	box-shadow: 0 15px 15px -10px gray;
 }
+/* Images general style (end) */
 
+/* Images hover shadow effect (start) */
 .img-right {
 	box-shadow: -20px 20px 20px -10px gray;
 	transition: box-shadow 1s;
@@ -106,8 +189,26 @@ blockquote {
 	box-shadow: -40px 40px 40px -20px gray;
 }
 
+.img-center{
+	box-shadow: 0 20px 20px -10px gray;
+	transition: box-shadow 1s;
+}
+
+.img-center:hover {
+	box-shadow: 0 40px 40px -20px gray;
+}
+
 .img-left {
 	box-shadow: 20px 20px 20px -10px gray;
+	transition: box-shadow 1s;
 }
+
+.img-left:hover {
+	box-shadow: 40px 40px 40px -20px gray;
+}
+/* Images hover shadow effect (end) */
+
+/* Images (end) ============================== */
+
 
 
