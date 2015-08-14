@@ -116,14 +116,26 @@ body {
 
 /* Block quote (start) ============================== */
 blockquote {
-	opacity: 0.7;
+	opacity: 1;
+}
+
+.full-quote {
+	width: 100%;
+	padding: 0 10% 0 10%;
+}
+
+/* Quote colors (start) */
+#full-quote-skills {
+	background-color: #B4E8BA;
 	box-shadow: 0 15px 15px -10px gray;
 	transition: box-shadow 1s;
 }
 
-blockquote:hover {
+#full-quote-skills:hover {
 	box-shadow: 0 30px 30px -15px gray;
 }
+/* Quote colors (end) */
+
 /* Block quote (end) ============================== */
 
 
@@ -168,6 +180,30 @@ blockquote:hover {
 /* Side navbar hover shadow effect for buttons (end) */
 
 /* Side navbar (end) ============================== */
+
+
+/* Main content (start) ============================== */
+
+/* content-title shadow hover (start) */
+.content-title {
+	box-shadow: 0 15px 15px -10px gray;
+	transition: box-shadow 1s;
+}
+
+.content-title:hover {
+	box-shadow: 0 30px 30px -10px gray;
+}
+
+.content-subtitle {
+	box-shadow: 0 10px 10px -10px gray;
+	transition: box-shadow 1s;
+}
+
+.content-subtitle:hover {
+	box-shadow: 0 20px 20px -10px gray;
+}
+/* Main content (end) ============================== */
+
 
 
 /* Images (start) ============================== */

@@ -101,11 +101,12 @@
 
 
     <!-- Quote-skills (start) ======================================== -->
-    <div id='full-quote-skills'>
-      <blockquote class='text-center'>
+    <div class='text-center full-quote' id='full-quote-skills'>
+        <br>
         <h3><div id='quote-skills'>"Jack of all trades, master of none. But in most cases, better than a master of one"</div></h3>
-        <small><cite title="Source Title"><div id='quote-skills-author'>Unknown</div></cite></small>
-      </blockquote>
+        <br>
+        <small><cite title="Source Title"><div id='quote-skills-author'>- Unknown</div></cite></small>
+        <br>
     </div>
     <!-- Quote-skills (end) ======================================== -->
 
@@ -124,9 +125,9 @@
                 <ul class="nav" id='sidenav-CS'>
                   <li><a href="#title-CS-python">
                     <img src='http://png-5.findicons.com/files/icons/2804/plex/512/python.png' width="25" height="25" align="middle">&nbsp; Python</a></li>
-                  <li><a href="#title-CS-Mathematica">
+                  <li><a href="#title-CS-mathematica">
                     <img src='http://xahlee.info/comp/Mathematica_logo/Mathematica_8_logo.png' width="25" height="25" align="middle">&nbsp; Mathematica</a></li>
-                  <li><a href="#title-CS-Matlab">
+                  <li><a href="#title-CS-matlab">
                     <img src='http://i.stack.imgur.com/Lws7i.png' width="25" height="25" align="middle">&nbsp; Matlab</a></li>
                   <li><a href="#title-CS-HTML">
                     <img src='http://www.w3.org/html/logo/downloads/HTML5_Logo_256.png' width="25" height="25" align="middle">&nbsp; HTML</a></li>
@@ -140,8 +141,9 @@
               <!-- EE (start) -->
               <li>
                 <a href="#title-EE">EE</a>
-                <ul class="nav">
-                  <li><a href="#title-EE-devices">Device Experience</a></li>
+                <ul class="nav" id='sidenav-EE'>
+                  <li><a href="#title-EE-devices">
+                    <img src='Images/icons/device experience icon.png' width="25" height="25" align="middle">&nbsp;Device Experience</a></li>
                   <li><a href="#title-EE-signals">Signal Processing</a></li>
                   <li><a href="#title-EE-control">Stable Control Systems</a></li>
                   <li><a href="#title-EE-clean">Clean Room Skills</a></li>
@@ -188,12 +190,12 @@
 
           <!-- CS section (start) ======================================== -->
           <div id='section-CS'>
-            <h2 class='text-center' id='title-CS'>Computer Science &amp; Software Engineering</h2>
+            <h2 class='text-center content-title' id='title-CS'>Computer Science &amp; Software Engineering</h2>
             <br>
 
             <!-- Python (start) -->
             <div class="container-fluid">
-              <h3 class='text-center' id='title-CS-python'><img src='http://png-5.findicons.com/files/icons/2804/plex/512/python.png' width="35" height="35" align="middle"> Python</h3>
+              <h3 class='text-center content-subtitle' id='title-CS-python'><img src='http://png-5.findicons.com/files/icons/2804/plex/512/python.png' width="35" height="35" align="middle"> Python</h3>
               <br>
               <h4>I've been using Python since high school. To me, it's the go-to when starting a project or assignmet. Although not as fast or memory efficent as C, for example, it has allowed me to rapidly build a variaty of applications and systems such as
               </h4>
@@ -224,31 +226,29 @@
             </div>
             <!-- Python (end) -->
 
+            <br>
+            <br>
+
             <!-- Mathematica (start) -->
             <div class="container-fluid">
-              <h3 class='text-center' id='title-CS-mathematica'><img src='http://xahlee.info/comp/Mathematica_logo/Mathematica_8_logo.png' width="35" height="35" align="middle"> Mathematica</h3>
+              <h3 class='text-center content-subtitle' id='title-CS-mathematica'><img src='http://xahlee.info/comp/Mathematica_logo/Mathematica_8_logo.png' width="35" height="35" align="middle"> Mathematica</h3>
               <br>
-              <h4>
+              <h4>Mathematica has been a life saver, if not a necessity, during some math heavy physics courses. Although I've barely touched its graph and network capabilities, I've more than taken advantage of its symbolic and numric computational abilities, especially during <a href='http://ocw.mit.edu/courses/physics/8-044-statistical-physics-i-spring-2013/'>8.044 (Statistical Physics and Thermodynamics)</a>.
               </h4>
               <br>
                 
               <!-- Mathematica projects (start) -->
               <div class='row'>
 
-                <div class="col-md-4">
-                  <h5>A <a href='#'>game for 6.090 </a> using <a href='http://www.pygame.org/news.html'>PyGame </a></h5><h6>(Run <a href='https://www.dropbox.com/sh/o62ecu685e7oxsd/AABozH7puERRRoiQYj4M05HUa?dl=0'>'Final Project.py' </a> to start the game. Requires PyGame)</h6>
+                <div class="col-md-6">
+                  <h5>Mathematica's ability to quickly sum, integrate, and differentiate complex definite and infinite expressions will never cease to amaze me</h5><h6></h6>
                   <br>
-                  <img class='img-responsive img-left' style ='float' src="Images/projects/Dimentionality.png" />
+                  <img class='img-responsive img-left' style ='float' src="Images/experience/Mathematica experience.png" />
                 </div>
 
-                <div class="col-md-4">
-                  <h5>A <a href='#'>program </a> that manipulated Excel data using the <a href='https://pypi.python.org/pypi/xlrd/0.9.2'>xlrd </a>package.</h5><h6>(helped identify leaky pipes and valves during my <a href='#'>UROP whith the Ion Pumps Group</a>)</h6><br>
-                  <img class='img-responsive img-center' style ='float' src="Images/experience/Ion pumps excel.png" />
-                </div>
-
-                <div class="col-md-4">
-                  <h5>A <a href='https://www.raspberrypi.org/'>Raspberry Pi </a><a href='#'>program </a>that read in <a href='http://elinux.org/RPi_Serial_Connection'>serial</a> inputs from a network, using <a href='https://docs.python.org/2/library/socket.html'>sockets</a>, and used the data to control a radio antenna</h5><h6>(helped stabelize atoms in a quantum computer during my <a href='#'>UROP whith the Quantum Computing Group</a>)</h6><br>
-                  <img class='img-responsive img-right' style ='float' src="Images/experience/Quanta RP.jpg" />
+                <div class="col-md-6">
+                  <h5>An ungodly integral in one the 8.044 PSsets.</h5><h6>(This is a snapshot of the professor's solutions since mine were done on paper)</h6><br>
+                  <img class='img-responsive img-right' style ='float' src="Images/experience/Ungodly 8.044.png" />
                 </div>
 
               </div>
@@ -257,8 +257,39 @@
             </div>
             <!-- Mathematica (end) -->
 
+            <br>
+            <br>
+
+            <!-- Matlab (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-CS-matlab'><img src='http://i.stack.imgur.com/Lws7i.png' width="35" height="35" align="middle"> Matlab</h3>
+              <br>
+              <h4>Mathematica has been a life saver, if not a necessity, during some math heavy physics courses. Although I've barely touched its graph and network capabilities, I've more than taken advantage of its symbolic and numric computational abilities, especially during <a href='http://ocw.mit.edu/courses/physics/8-044-statistical-physics-i-spring-2013/'>8.044 (Statistical Physics and Thermodynamics)</a>.
+              </h4>
+              <br>
+                
+              <!-- Matlab projects (start) -->
+              <div class='row'>
+
+                <div class="col-md-6">
+                  <h5>Mathematica's ability to quickly sum, integrate, and differentiate complex definite and infinite expressions will never cease to amaze me</h5><h6></h6>
+                  <br>
+                  <img class='img-responsive img-left' style ='float' src="Images/experience/Mathematica experience.png" />
+                </div>
+
+                <div class="col-md-6">
+                  <h5>An ungodly integral in one the 8.044 PSsets.</h5><h6>(This is a snapshot of the professor's solutions since mine were done on paper)</h6><br>
+                  <img class='img-responsive img-right' style ='float' src="Images/experience/Ungodly 8.044.png" />
+                </div>
+
+              </div>
+              <!-- Matlab projects (end) -->
+
+            </div>
+            <!-- Matlab (end) -->
+
           </div>
-          <!-- CS section (start) ======================================== -->
+          <!-- CS section (end) ======================================== -->
 
           <br>
           <br>

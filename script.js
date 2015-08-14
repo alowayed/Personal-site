@@ -43,10 +43,10 @@ $(document).ready(function(){
 	];
 
 	
-	$("#full-joke").hide('clip',10, function(){
-		$(this).show('clip',1000);
-		$('blockquote').fadeTo(2000, 1);
-	});
+	// $(".full-quote").hide('clip', 10, function(){
+	// 	$(".full-quote").show('clip',500);
+	// 	// $(this).fadeTo(1000, 1);
+	// });
 
 
 	/* Quote fade (start) */
@@ -92,13 +92,25 @@ $(document).ready(function(){
 			var toActivateCS = $('#section-CS').visible(true);
 			var toActivateCSChild = $('#section-CS div').visible(true);
 			if (toActivateCS || toActivateCSChild) {
-		    	$('#sidenav-CS').fadeIn(500);
+				$('#sidenav-CS').fadeIn(500);
 		    } else {
 		    	$('#sidenav-CS').fadeOut(500, function(){
 		    		$('#sidenav-CS').hide();
 		    	});
 		    }
 		    /* Fade in CS-section (end) */
+
+		    /* Fade in EE-section (start) */
+			var toActivateCS = $('#section-EE').visible(true);
+			var toActivateCSChild = $('#section-EE div').visible(true);
+			if (toActivateCS || toActivateCSChild) {
+				$('#sidenav-EE').fadeIn(500);
+		    } else {
+		    	$('#sidenav-EE').fadeOut(500, function(){
+		    		$('#sidenav-EE').hide();
+		    	});
+		    }
+		    /* Fade in EE-section (end) */
 
 		    
 	    }
