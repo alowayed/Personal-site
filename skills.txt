@@ -27,7 +27,8 @@ CS:
 EE:
 
 	Devices used:
-
+	
+	See: KAUST
 
 	Signal processing:
 	See: Ion Cavity AC/DC converter and analysis (experience section)

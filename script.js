@@ -92,6 +92,8 @@ $(document).ready(function(){
 			var EETop = $('#section-EE').offset().top;
 			var MechETop = $('#section-MechE').offset().top;
 			var LeadTop = $('#section-Lead').offset().top;
+			var BusinessTop = $('#section-Business').offset().top;
+			var CommTop = $('#section-Comm').offset().top;
 
 			/* Fade in CS-section, fade out EE-section (start) */
 			if ((currentScroll >= CSTop) && (currentScroll <= (EETop - screen.height/2))) {
@@ -124,6 +126,40 @@ $(document).ready(function(){
 		    		$('#sidenav-Lead').hide();
 		    	});
 			}
+			/* Fade in MechE-section, fade out EE and Lead-section (end) */
+
+			/* Fade in Lead-section, fade out MechE and Business-section (start) */
+			else if ((currentScroll >= (LeadTop - screen.height/2)) && (currentScroll <= (BusinessTop - screen.height/2))){
+				$('#sidenav-MechE').fadeOut(500, function(){
+		    		$('#sidenav-MechE').hide();
+		    	});
+				$('#sidenav-Lead').fadeIn(500);
+				$('#sidenav-Business').fadeOut(500, function(){
+		    		$('#sidenav-Business').hide();
+		    	});
+			}
+			/* Fade in Lead-section, fade out MechE and Business-section (end) */
+
+			/* Fade in Business-section, fade out Lead and Comm-section (start) */
+			else if ((currentScroll >= (BusinessTop - screen.height/2)) && (currentScroll <= (CommTop - screen.height/2))){
+				$('#sidenav-Lead').fadeOut(500, function(){
+		    		$('#sidenav-Lead').hide();
+		    	});
+				$('#sidenav-Business').fadeIn(500);
+				$('#sidenav-Comm').fadeOut(500, function(){
+		    		$('#sidenav-Comm').hide();
+		    	});
+			}
+			/* Fade in Business-section, fade out Lead and Comm-section (end) */
+
+			/* Fade in Business-section, fade out Lead and Comm-section (start) */
+			else {
+				$('#sidenav-Comm').fadeIn(500);
+				$('#sidenav-Business').fadeOut(500, function(){
+		    		$('#sidenav-Business').hide();
+		    	});
+			}
+			/* Fade in Business-section, fade out Lead and Comm-section (end) */
 		    
 	    }
 	    /* When scrolling through content (end) */
