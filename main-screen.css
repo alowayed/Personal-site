@@ -89,6 +89,10 @@ body {
 /* Change social icon colors (end) */
 
 /* Button colors (start) */
+#YSA-button {
+	background-color: #D3D3D3;
+	z-index: 5;
+}
 #education-button {
 	background-color: #FFC3CF;
 	z-index: 4;
@@ -122,17 +126,23 @@ blockquote {
 .full-quote {
 	width: 100%;
 	padding: 0 10% 0 10%;
-}
-
-/* Quote colors (start) */
-#full-quote-skills {
-	background-color: #B4E8BA;
 	box-shadow: 0 15px 15px -10px gray;
 	transition: box-shadow 1s;
 }
 
-#full-quote-skills:hover {
+.full-quote:hover {
 	box-shadow: 0 30px 30px -15px gray;
+}
+
+/* Quote colors (start) */
+#full-quote-index {
+	background-color: #D3D3D3;
+}
+#full-quote-education {
+	background-color: #FFC3CF;
+}
+#full-quote-skills {
+	background-color: #B4E8BA;
 }
 /* Quote colors (end) */
 
@@ -182,7 +192,7 @@ blockquote {
 /* Side navbar (end) ============================== */
 
 
-/* Main content (start) ============================== */
+/* Main text (start) ============================== */
 
 /* content-title shadow hover (start) */
 .content-title {
@@ -202,8 +212,20 @@ blockquote {
 .content-subtitle:hover {
 	box-shadow: 0 20px 20px -10px gray;
 }
-/* Main content (end) ============================== */
+/* content-title shadow hover (end) */
 
+/* text padding and alignment (start) */
+h5 {
+	padding-left:  20px;
+	padding-right: 20px;
+}
+.pad-text {
+	padding-left:  20px;
+	padding-right: 20px;
+}
+/* text padding and alignment (end) */
+
+/* Main text (end) ============================== */
 
 
 /* Images (start) ============================== */
@@ -243,6 +265,13 @@ blockquote {
 	box-shadow: 40px 40px 40px -20px gray;
 }
 /* Images hover shadow effect (end) */
+
+/* Images centering (start) */
+.center-img {
+	margin-left: auto;
+    margin-right: auto;
+}
+/* Images centering (end) */
 
 /* Images (end) ============================== */
 

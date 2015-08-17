@@ -2,23 +2,19 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- Import original Bootstrap css from file -->
+    <!-- Import altered Bootstrap css from file -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
+    <!-- Import original JQuery UI css from url -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Import Awesome-font from url -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     <!-- Import personal css from file -->
     <link rel="stylesheet" type="text/css" href="main-screen.css"/>
-
   </head>
-  <!-- Import personal css from file -->
 
   <body>
-
-    <!-- Navigation bar
-    Contains: Educatation, Experience, Projects, Resume, Hobbies, Spirituality, Contact, (links to social media)-->
+    
+    <!-- Top nav bar (start) ======================================== -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,17 +24,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">YSA</a>
+          <a id='YSA-button' class="navbar-brand" href="index.html">YSA</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <!-- Top nav-bar left side (start)-->
           <ul class="nav navbar-nav">
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Resume.pdf">Resume</a></li>
+            <li id='education-button'><a href="education.html">Education</a></li>
+            <li id='experience-button'><a href="experience.html">Experience</a></li>
+            <li id='projects-button'><a href="projects.html">Projects</a></li>
+            <li id='skills-button'><a href="skills.html">Skills</a></li>
+            <li id='resume-button'><a href="Resume.pdf">Resume</a></li>
           </ul>
+          <!-- Top nav-bar left side (end)-->
+
           <!-- <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
@@ -46,23 +46,23 @@
             <button type="submit" class="btn btn-default">Submit</button>
           </form> -->
 
-          <!-- Nav-bar right side (Start)-->
+          <!-- Top nav-bar right side (start)-->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="laughs.html">Laughs</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
 
-            <!-- Nav-bar Drop down menu (Start)-->
+            <!-- Top nav-bar drop down menu (Start)-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 
-                <!-- Direct contact buttons (Start)-->
+                <!-- Direct contact buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Direct</a></li>
                 <li><a href="#">Email</a></li>
                 <li><a href="#">Call</a></li>
-                <!-- Direct contact end (Start)-->
+                <!-- Direct contact buttons (end)-->
 
-                <!-- Social Media buttons (Start)-->
+                <!-- Social Media buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Social Media</a></li>          
                 <li><a href="https://www.facebook.com/yousef.alowayed">
                     <i class="fa fa-facebook"> &nbsp;&nbsp; facebook</i></a>
@@ -76,30 +76,74 @@
                 <li><a href="https://github.com/alowayed">
                     <i class="fa fa-github"> &nbsp;&nbsp;Github</i></a>
                 </li>
-                <!-- Social Media buttons (End)-->
+                <!-- Social Media buttons (end)-->
 
               </ul>
             </li>
-            <!-- Nav-bar Drop down menu (End)-->
+            <!-- Top nav-bar Drop down menu (end)-->
 
           </ul>
-          <!-- Nav-bar right side (End)-->
+          <!-- Top nav-bar right side (end)-->
 
         </div>
 
       </div>
     </nav>
+    <!-- Top nav bar (end) ======================================== -->
 
-    <!-- Quote (start)-->
-    <div id='full-quote'>
-      <blockquote class='text-center'>
-        <h3><div id='quote'>"Jack of all trades, master of none ...
-          certainly better than a master of one"</div></h3>
-        <small><cite title="Source Title"><div id='quote-author'>Unknown</div></cite></small>
-      </blockquote>
+
+    <!-- Quote-skills (start) ======================================== -->
+    <div class='text-center full-quote' id='full-quote-index'>
+        <br>
+        <h3><div id='quote-index'>"Think ... make."</div></h3>
+        <br>
+        <small><cite title="Source Title"><div id='quote-index-author'>- Unknown</div></cite></small>
+        <br>
     </div>
-    <!-- Quote (end)-->
+    <!-- Quote-skills (end) ======================================== -->
 
+    <br>
+    <br>
+
+    <!-- Main body (start) ======================================== -->
+    <div class='containter-fluid'>
+      <div class='row'>
+
+        <!-- Left blank (start) -->
+        <div class="col-md-3">
+        </div>
+        <!-- Left blank (end) -->
+
+        <!-- Left image (start) -->
+        <div class="col-md-3">
+          <img class='img-responsive img-left center-img' style ='float' align="middle" src="Images/Cover-me.jpg" />
+        </div>
+        <!-- Left image (end) -->
+
+        <!-- Right conent (start) -->
+        <div class="col-md-4">
+          <h3 class='content-title text-center'>Welcome to my site! </h3><p></p>
+          <br>
+          <h5>This is a place where I share all the things I've done and hope to do. All the things I love and am passionate about. </h5><p></p>
+          <h5>Feel free to look around at the cool stuff I've made (<a href='projects.html'>projects</a>), the skills I've gained from my time at MIT and during internships (<a href='skills.html'>skills</a>), the amazing research, tech, and business experiences I've had (<a href='experience.html'>experience</a>), the education I was so lucky to recieve(<a href='education.html'>education</a>), and some things I do during my free time (<a href='hobbies.html'>hobbies</a>).</h5>
+        </div>
+        <!-- Right content (end) -->
+
+        <!-- Right blank (start) -->
+        <div class="col-md-2">
+        </div>
+        <!-- Right blank (end) -->
+
+      </div>
+    </div>
+
+    <br>
+    <!-- Main body (end) ======================================== -->
+
+
+
+
+    <!-- JS imports (start) ======================================== -->
 
     <!-- Import JQuery(min) library from Google from url -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -107,12 +151,20 @@
     <!-- Import Bootstrap js(min) library from url -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <!-- Import JQuery UI (min) library from url -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
     <!-- Import Ajax js(min) library from url --><!--
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     -->
 
+    <!-- Import JQuery Visible plug in from file -->
+    <script src='jquery-visible/jquery.visible.min.js'></script>
+
     <!-- Import personal js from file -->
     <script type='text/javascript' src="script.js"></script>
+
+    <!-- JS imports (end) ======================================== -->
 
   </body>
 </html>
