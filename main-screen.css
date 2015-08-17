@@ -50,7 +50,7 @@ body {
 /* Top nav-bar shadow hover effect (start) */
 .navbar {
 	box-shadow: 0 15px 15px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .navbar:hover {
@@ -60,7 +60,7 @@ body {
 
 /* Top nav-bar shadow hover effect for buttons (start) */
 .navbar li {
-	transition: box-shadow 2s;
+	transition: box-shadow 1s;
 }
 
 .navbar li:hover {
@@ -72,7 +72,7 @@ body {
 }
 
 .navbar a {
-	transition: box-shadow 2s;
+	transition: box-shadow 1s;
 }
 
 .navbar a:hover {
@@ -127,7 +127,7 @@ blockquote {
 	width: 100%;
 	padding: 0 10% 0 10%;
 	box-shadow: 0 15px 15px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .full-quote:hover {
@@ -160,7 +160,7 @@ blockquote {
 /* Side navbar hover shadow effect (start) */
 .bs-docs-sidenav {
 	box-shadow: 15px 15px 15px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .bs-docs-sidenav:hover {
@@ -181,7 +181,7 @@ blockquote {
 
 /* Side navbar hover shadow effect for buttons (start) */
 .bs-docs-sidenav a {
-	transition: box-shadow 2s;
+	transition: box-shadow 1s;
 }
 
 .bs-docs-sidenav a:hover {
@@ -197,7 +197,7 @@ blockquote {
 /* content-title shadow hover (start) */
 .content-title {
 	box-shadow: 0 15px 15px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .content-title:hover {
@@ -206,7 +206,7 @@ blockquote {
 
 .content-subtitle {
 	box-shadow: 0 10px 10px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .content-subtitle:hover {
@@ -240,7 +240,7 @@ h5 {
 /* Images hover shadow effect (start) */
 .img-right {
 	box-shadow: -20px 20px 20px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .img-right:hover {
@@ -249,7 +249,7 @@ h5 {
 
 .img-center{
 	box-shadow: 0 20px 20px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .img-center:hover {
@@ -258,7 +258,7 @@ h5 {
 
 .img-left {
 	box-shadow: 20px 20px 20px -10px gray;
-	transition: box-shadow 1s;
+	transition: box-shadow 0.5s;
 }
 
 .img-left:hover {
