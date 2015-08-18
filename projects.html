@@ -2,23 +2,43 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- Import original Bootstrap css from file -->
+    <!-- Import altered Bootstrap css from file -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
+    <!-- Import original JQuery UI css from url -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Import Awesome-font from url -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     <!-- Import personal css from file -->
     <link rel="stylesheet" type="text/css" href="main-screen.css"/>
 
+    <!-- favicon (start) -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicomatic/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <!-- favicon (end) -->
+
   </head>
-  <!-- Import personal css from file -->
 
   <body>
-
-    <!-- Navigation bar
-    Contains: Educatation, Experience, Projects, Resume, Hobbies, Spirituality, Contact, (links to social media)-->
+    
+    <!-- Top nav bar (start) ======================================== -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,17 +48,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">YSA</a>
+          <a id='YSA-button' class="navbar-brand" href="index.html">YSA</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <!-- Top nav-bar left side (start)-->
           <ul class="nav navbar-nav">
-            <li><a href="education.html">Education</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="Resume.pdf">Resume</a></li>
+            <li id='education-button'><a href="education.html">Education</a></li>
+            <li id='experience-button'><a href="experience.html">Experience</a></li>
+            <li id='projects-button'><a href="projects.html">Projects</a></li>
+            <li id='skills-button'><a href="skills.html">Skills</a></li>
+            <li id='resume-button'><a href="Resume.pdf">Resume</a></li>
           </ul>
+          <!-- Top nav-bar left side (end)-->
+
           <!-- <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
@@ -46,23 +70,23 @@
             <button type="submit" class="btn btn-default">Submit</button>
           </form> -->
 
-          <!-- Nav-bar right side (Start)-->
+          <!-- Top nav-bar right side (start)-->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="laughs.html">Laughs</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
 
-            <!-- Nav-bar Drop down menu (Start)-->
+            <!-- Top nav-bar drop down menu (Start)-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 
-                <!-- Direct contact buttons (Start)-->
+                <!-- Direct contact buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Direct</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Call</a></li>
-                <!-- Direct contact end (Start)-->
+                <li><a href="mailto:alowayed@mit.edu?subject=Hey I found your site and wanted to say 'hi'">Email</a></li>
+                <li><a href="tel:540-998-8887">Call</a></li>
+                <!-- Direct contact buttons (end)-->
 
-                <!-- Social Media buttons (Start)-->
+                <!-- Social Media buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Social Media</a></li>          
                 <li><a href="https://www.facebook.com/yousef.alowayed">
                     <i class="fa fa-facebook"> &nbsp;&nbsp; facebook</i></a>
@@ -76,51 +100,442 @@
                 <li><a href="https://github.com/alowayed">
                     <i class="fa fa-github"> &nbsp;&nbsp;Github</i></a>
                 </li>
-                <!-- Social Media buttons (End)-->
+                <!-- Social Media buttons (end)-->
 
               </ul>
             </li>
-            <!-- Nav-bar Drop down menu (End)-->
+            <!-- Top nav-bar Drop down menu (end)-->
 
           </ul>
-          <!-- Nav-bar right side (End)-->
+          <!-- Top nav-bar right side (end)-->
 
         </div>
 
       </div>
     </nav>
+    <!-- Top nav bar (end) ======================================== -->
 
-    <div id='full-joke'>
-      <blockquote class='text-center'>
-        <h3><div id='joke'>"Write it. Shoot it. Publish it. Crochet it, saute it, whatever. MAKE."</div></h3>
-        <small><cite title="Source Title"><div id='joke-author'>Joss Whedon</div></cite></small>
-      </blockquote>
+
+    <!-- Quote-projects (start) ======================================== -->
+    <div class='text-center full-quote' id='full-quote-projects'>
+        <br>
+        <h3><div id='quote-projects'>"Write it. Shoot it. Publish it. Crochet it, saute it whatever. MAKE."</div></h3>
+        <br>
+        <small><cite title="Source Title"><div id='quote-projects-author'>- Joss Whedon</div></cite></small>
+        <br>
     </div>
+    <!-- Quote-projects (end) ======================================== -->
 
-    <!-- Projects (start) -->
+    <br>
+    <br>
 
-    <!-- Solar cells in 6.152J (start) -->
-    <div class="container-fluid">
-      <h3 class='text-center'>Fabricated and tested solar cells in <a href='https://www.youtube.com/playlist?list=PLc-oZVRqCK37X9qB5LlSjUgv7H7rDY6OK'>6.152J</a></h3>
-      <br>
+    <!-- Main body (start) ======================================== -->
+    <div class='containter-fluid'>
       <div class='row'>
-        <div class="col-sm-6" align='right'>
-          <h5>When </h5><p>Spring of Junior year</p>
-          <h5>Where </h5><p>The mit microsystems lab (<a href='http://www-mtl.mit.edu/'>MTL</a>)</p>
-          <h5>Why </h5>Part of the <p></p>
-          <h5>Skills learned </h5><p></p>
-          <h5>More details </h5><p></p>
+
+        <!-- Left nav bar (start) ======================================== -->
+        <div class="col-md-2" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav fixed">
+              
+              <!-- Physical (start) -->
+              <li>
+                <a href="#title-physical">Physical</a>
+                <ul class="nav" id='sidenav-physical'>
+                  <li><a href="#title-physical-solar">
+                    <img src='#' height="20px" align="middle">&nbsp;&nbsp;&nbsp; Solar Cells</a></li>
+                  <li><a href="#title-physical-door">
+                    <img src='#' height="20px" align="middle">&nbsp;&nbsp;&nbsp; Infinite Door</a></li>
+                </ul>
+              </li>
+              <!-- Physical (end) -->
+
+              <!-- Digital (start) -->
+              <li>
+                <a href="#title-digital">Digital</a>
+                <ul class="nav" id='sidenav-digital'>
+                  <li><a href="#title-digital-pygame">
+                    <img src='#' width="120" align="middle">&nbsp;&nbsp; Python game</a></li>
+                </ul>
+              </li>
+              <!-- Digital (end) -->
+
+              <!-- Both (start) -->
+              <li>
+                <a href="#title-both"> Both </a>
+                <ul class="nav" id='sidenav-both'>
+                </ul>
+              </li>
+              <!-- Both (end) -->
+
+            </ul>
+          </nav>
         </div>
-        <div class="col-sm-6">
-          <div class='image_holder' align="right">
-            <img class='img-responsive' style ='float' src="Images/projects/Solar cell.jpg" />
+        <!-- Left nav bar (end) ======================================== -->
+
+        <!-- Right content (start) ======================================== -->
+        <div class='col-md-10' role='main'>
+
+          <!-- Physical section (start) ======================================== -->
+          <div id='section-physical'>
+            <h2 class='text-center content-title' id='title-physical'>Physical</h2>
+            <br>
+
+            <!-- Solar Cell (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-physical-solar'><img src='#' height="30" align="middle">&nbsp; Solar Cells</h3>
+              <h6 class='pad-text text-center'></h6>
+              <br>
+
+              <!-- Solar Cell header (start) -->
+              <div class='row'>
+                
+                <div class="col-md-3">
+                  <h4 class='content-subtitle text-center'>When </h4>
+                  <h5 class='pad-text'>Spring of Junior year</h5>
+                </div>
+
+                <div class="col-md-4">
+                  <h4 class='content-subtitle text-center'>Where</h4>
+                  <h5>The mit microsystems lab (<a href='http://www-mtl.mit.edu/'>MTL</a>) and at the KAUST Solar &amp; Photovoltaic Engineering Research Center (<a href='http://sperc.kaust.edu.sa/Pages/Home.aspx'>SPERC</a>)</h5>
+                </div>
+
+                <div class="col-md-5">
+                  <h4 class='content-subtitle text-center'>Why</h4>
+                  <h5 class='pad-text'>???</h5>
+                </div>
+
+              </div>
+              <!-- Solar Cell header (end) -->
+
+              <br>
+              <br>
+
+              <!-- Solar Cell content (start) -->
+              <div class='row'>
+
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="Images/projects/Solar cell.jpg" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Details</h4>
+                  <h5>???</h5>
+                </div>
+                
+              </div>
+              <!-- Solar Cell content (end) -->
+
+            </div>
+            <!-- Solar Cell (end) -->
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- KAUST (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-internship-KAUST'><img src='http://sri-uq.kaust.edu.sa/PublishingImages/Workshop/kaust_logo3.png' height="30" align="middle">&nbsp; KAUST <a href='http://sperc.kaust.edu.sa/Pages/Home.aspx'>SPERC</a></h3>
+              <h6 class='pad-text text-center'>June 2014 - July 2014 (2 months) | Thewal, Saudi Arabia</h6>
+              <br>
+
+              <!-- KAUST header (start) -->
+              <div class='row'>
+                
+                <div class="col-md-3">
+                  <h4 class='content-subtitle text-center'>Title </h4>
+                  <h5 class='pad-text'>Undergraduate Research Assistant</h5>
+                </div>
+
+                <div class="col-md-4">
+                  <h4 class='content-subtitle text-center'>Supervisor(s)</h4>
+                  <ul>
+                    <li><h5>Prof. <a href='https://sa.linkedin.com/pub/osman-bakr/93/a25/2b8'>Osman Bakr</a></h5></li>
+                    <li><h5>Post Doc. <a href='https://sa.linkedin.com/pub/makhsud-saidaminov/9b/293/80a/en'>Makhsud Saidaminov</a></h5></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-5">
+                  <h4 class='content-subtitle text-center'>Project</h4>
+                  <h5 class='pad-text'>Perovskite solar cell fabrication and testing</h5>
+                </div>
+
+              </div>
+              <!-- KAUST header (end) -->
+
+              <br>
+              <br>
+
+              <!-- KAUST content (start) -->
+              <div class='row'>
+                
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="#" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Roles</h4>
+                  <ul>
+                    <li><h5>Fabricated solar cells using etching, spin coating, vapor deposition, dipping and sputtering</h5></li>
+                    <li><h5>Tested and characterized surface types and efficiencies using ESM, NMR/IR spectroscopy and optical microscopes</h5></li>
+                    <li><h5>Wrote weekly reports documenting improvements in efficiency through optimized fabrication techniques</h5></li>
+                    <li><h5>Increase the effeciency of the solar cells 1.5% in 2 months</h5></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <!-- KAUST content (end) -->
+
+            </div>
+            <!-- KAUST (end) -->
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- Quantum (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-internship-Quantum'><img src='http://logonoid.com/images/mit-logo.png' height="30" align="middle">&nbsp; MIT <a href='http://www.rle.mit.edu/'>rle </a><a href='http://web.mit.edu/~cua/www/quanta/index.html'>Quanta Group</a></h3>
+              <h6 class='pad-text text-center'>September 2013 - February 2014 (6 months) | Cambridge, MA</h6>
+              <br>
+
+              <!-- Quantum header (start) -->
+              <div class='row'>
+                
+                <div class="col-md-3">
+                  <h4 class='content-subtitle text-center'>Title </h4>
+                  <h5 class='pad-text'>Undergraduate Researcher</h5>
+                </div>
+
+                <div class="col-md-4">
+                  <h4 class='content-subtitle text-center'>Supervisor(s)</h4>
+                  <ul>
+                    <li><h5>Prof. <a href='http://web.mit.edu/physics/people/faculty/chuang_isaac.html'>Isaac Chuang</a></h5></li>
+                    <li><h5>PhD Student. <a href='https://sa.linkedin.com/pub/makhsud-saidaminov/9b/293/80a/en'>Helena Zhang</a></h5></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-5">
+                  <h4 class='content-subtitle text-center'>Project</h4>
+                  <h5 class='pad-text'>Ion cavity trap feedback system</h5>
+                </div>
+
+              </div>
+              <!-- Quantum header (end) -->
+
+              <br>
+              <br>
+
+              <!-- Quantum content (start) -->
+              <div class='row'>
+                
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="#" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Roles</h4>
+                  <ul>
+                    <li><h5>Designed a feedback system that keeps an ion afloat above a series of radio frequency antennas</h5></li>
+                    <li><h5>Converted the radio wave frequencies from the antennas, measured as an analog signal, to a digital signal and created a network to send the data to the main computers for processing</h5></li>
+                    <li><h5>Created a stabilizing algorithm using the analyzed data to vary the RF waves and keep the ion stable</h5></li>
+                    <li><h5>My project led to better measurements of the ion's quantum numbers that may be manipulated to create a quantum computer</h5></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <!-- Quantum content (end) -->
+
+            </div>
+            <!-- Qunatum (end) -->
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- Combustion (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-internship-Combustion'><img src='http://logonoid.com/images/mit-logo.png' height="30" align="middle">&nbsp; MIT <a href='http://web.mit.edu/rgd/www/index.html'>RGD</a></h3>
+              <h6 class='pad-text text-center'>September 2013 - February 2014 (6 months) | Cambridge, MA</h6>
+              <br>
+
+              <!-- Combustion header (start) -->
+              <div class='row'>
+                
+                <div class="col-md-3">
+                  <h4 class='content-subtitle text-center'>Title </h4>
+                  <h5 class='pad-text'>Undergraduate Researcher</h5>
+                </div>
+
+                <div class="col-md-4">
+                  <h4 class='content-subtitle text-center'>Supervisor(s)</h4>
+                  <ul>
+                    <li><h5>Prof. <a href='https://www.linkedin.com/pub/ahmed-ghoniem/11/3a3/437'>Ahmed Ghoniem</a></h5></li>
+                    <li><h5>PhD Student. <a href='https://www.linkedin.com/pub/anton-hunt/87/667/ab8'>Anton Hunt</a></h5></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-5">
+                  <h4 class='content-subtitle text-center'>Project</h4>
+                  <h5 class='pad-text'>Efficient Fuel Combustion Data Analysis</h5>
+                </div>
+
+              </div>
+              <!-- Combustion header (end) -->
+
+              <br>
+              <br>
+
+              <!-- Combustion content (start) -->
+              <div class='row'>
+                
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="#" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Roles</h4>
+                  <ul>
+                    <li><h5>Worked closely with Graduate student Anton Hunt to increase the efficiency of fuel combustion by burning it in an oxygen rich environment</h5></li>
+                    <li><h5>Used Python to extract, organise, and analyse data point measured and stored by the measurement apparatus</h5></li>
+                    <li><h5>Used SolidWorks to design and then assemble a new insulating chamber for the reactor</h5></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <!-- Combustion content (end) -->
+
+            </div>
+            <!-- Combustion (end) -->
+
           </div>
+          <!-- Research & Internships section (end) ======================================== -->
+
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <!-- Workshops & Seminars section (start) ======================================== -->
+          <div id='section-seminar'>
+            <h2 class='text-center content-title' id='title-seminar'>Workshops &amp; Seminars</h2>
+            <br>
+
+            <!-- EDAD (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-seminar-EDAD'><img src='http://logonoid.com/images/mckinsey-and-company-logo.png' height="30" align="middle">&nbsp; <a href='https://mckinsey.secure.force.com/Event/job_details?jid=a0xA000000CtjelIAB'>EDAD Program</a></h3>
+              <h6 class='pad-text text-center'>April 25, 2015 - April 26, 2015 (weekend) | Boston, MA</h6>
+              <br>
+
+              <!-- EDAD content (start) -->
+              <div class='row'>
+                
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="#" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Details</h4>
+                  <ul>
+                    <li><h5>???</h5></li>
+                    <li><h5>???</h5></li>
+                    <li><h5>???</h5></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <!-- EDAD content (end) -->
+
+            </div>
+            <!-- EDAD (end) -->
+
+          </div>
+          <!-- Workshops & Seminars section (end) ======================================== -->
+
+          <br>
+          <br>
+
+          <!-- Competitions section (start) ======================================== -->
+          <div id='section-comp'>
+            <h2 class='text-center content-title' id='title-comp'>Competitions</h2>
+            <br>
+
+            <!-- MakeMIT 2015 (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-comp-MakeMIT'><img src='http://logonoid.com/images/mit-logo.png' height="30" align="middle">&nbsp; <a href='http://makemit.org'>MakeMIT</a> <a href='http://makemit.org/review2015/'>2015</a></h3>
+              <h6 class='pad-text text-center'>February 28, 2015 (1 day) | Cambridge, MA</h6>
+              <br>
+
+              <!-- MakeMIT 2015 content (start) -->
+              <div class='row'>
+                
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="#" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Details</h4>
+                  <ul>
+                    <li><h5>???</h5></li>
+                    <li><h5>???</h5></li>
+                    <li><h5>???</h5></li>
+                  </ul>
+                </div>
+                
+              </div>
+              <!-- MakeMIT 2015 content (end) -->
+
+            </div>
+            <!-- MakeMIT 2015 (end) -->
+
+          </div>
+          <!-- Competitions section (end) ======================================== -->
+
         </div>
+        <!-- Right content (end) ======================================== -->
+
       </div>
     </div>
+
     <br>
     <br>
-    <!-- Solar cells in 6.152J (end) -->
+    <br>
+    <br>
+    <!-- Main body (end) ======================================== -->
+
+
+
+
+    <!-- JS imports (start) ======================================== -->
+
+    <!-- Import JQuery(min) library from Google from url -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Import Bootstrap js(min) library from url -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Import JQuery UI (min) library from url -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Import Ajax js(min) library from url --><!--
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    -->
+
+    <!-- Import JQuery Visible plug in from file -->
+    <script src='jquery-visible/jquery.visible.min.js'></script>
+
+    <!-- Import personal js from file -->
+    <script type='text/javascript' src="script-projects.js"></script>
+
+    <!-- JS imports (end) ======================================== -->
+
+  </body>
+</html>
+
+
 
     <!-- Infinite door (start) -->
     <div class="container-fluid">
@@ -188,21 +603,3 @@
       </div>
     </div>
     <!-- Pygame (end) -->
-
-
-
-    <!-- Import JQuery(min) library from Google from url -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <!-- Import Bootstrap js(min) library from url -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- Import Ajax js(min) library from url --><!--
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    -->
-
-    <!-- Import personal js from file -->
-    <script type='text/javascript' src="script.js"></script>
-
-  </body>
-</html>
