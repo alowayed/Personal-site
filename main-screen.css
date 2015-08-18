@@ -141,6 +141,9 @@ blockquote {
 #full-quote-education {
 	background-color: #FFC3CF;
 }
+#full-quote-experience {
+	background-color: #E8CFB4;
+}
 #full-quote-skills {
 	background-color: #B4E8BA;
 }
@@ -171,12 +174,12 @@ blockquote {
 /* Side navbar text (start) */
 .bs-docs-sidenav li {
 	font-size: 15px;
+	text-indent: 0;
 }
 
 .bs-docs-sidenav li li {
 	font-size: 12px;
-/*	text-indent: 1em;
-*/}
+}
 /* Side navbar text (end) */
 
 /* Side navbar hover shadow effect for buttons (start) */
@@ -215,6 +218,9 @@ blockquote {
 /* content-title shadow hover (end) */
 
 /* text padding and alignment (start) */
+.inline{
+	display: inline;
+}
 h5 {
 	padding-left:  20px;
 	padding-right: 20px;

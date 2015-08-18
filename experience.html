@@ -2,23 +2,43 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!-- Import original Bootstrap css from file -->
+    <!-- Import altered Bootstrap css from file -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-
+    <!-- Import original JQuery UI css from url -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Import Awesome-font from url -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
     <!-- Import personal css from file -->
     <link rel="stylesheet" type="text/css" href="main-screen.css"/>
 
+    <!-- favicon (start) -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicomatic/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <!-- favicon (end) -->
+
   </head>
-  <!-- Import personal css from file -->
 
   <body>
-
-    <!-- Navigation bar
-    Contains: Educatation, Experience, Projects, Resume, Hobbies, Spirituality, Contact, (links to social media)-->
+    
+    <!-- Top nav bar (start) ======================================== -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,40 +48,45 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">YSA</a>
+          <a id='YSA-button' class="navbar-brand" href="index.html">YSA</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <!-- Top nav-bar left side (start)-->
           <ul class="nav navbar-nav">
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="Resume.pdf">Resume</a></li>
+            <li id='education-button'><a href="education.html">Education</a></li>
+            <li id='experience-button'><a href="experience.html">Experience</a></li>
+            <li id='projects-button'><a href="projects.html">Projects</a></li>
+            <li id='skills-button'><a href="skills.html">Skills</a></li>
+            <li id='resume-button'><a href="Resume.pdf">Resume</a></li>
           </ul>
-          <form class="navbar-form navbar-left" role="search">
+          <!-- Top nav-bar left side (end)-->
+
+          <!-- <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+          </form> -->
 
-          <!-- Nav-bar right side (Start)-->
+          <!-- Top nav-bar right side (start)-->
           <ul class="nav navbar-nav navbar-right">
             <li><a href="laughs.html">Laughs</a></li>
-            <li><a href="#">Hobbies</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
 
-            <!-- Nav-bar Drop down menu (Start)-->
+            <!-- Top nav-bar drop down menu (Start)-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 
-                <!-- Direct contact buttons (Start)-->
+                <!-- Direct contact buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Direct</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Call</a></li>
-                <!-- Direct contact end (Start)-->
+                <li><a href="mailto:alowayed@mit.edu?subject=Hey I found your site and wanted to say 'hi'">Email</a></li>
+                <li><a href="tel:540-998-8887">Call</a></li>
+                <!-- Direct contact buttons (end)-->
 
-                <!-- Social Media buttons (Start)-->
+                <!-- Social Media buttons (start)-->
                 <li><a href="#" class="btn btn-default disabled">Social Media</a></li>          
                 <li><a href="https://www.facebook.com/yousef.alowayed">
                     <i class="fa fa-facebook"> &nbsp;&nbsp; facebook</i></a>
@@ -75,113 +100,310 @@
                 <li><a href="https://github.com/alowayed">
                     <i class="fa fa-github"> &nbsp;&nbsp;Github</i></a>
                 </li>
-                <!-- Social Media buttons (End)-->
+                <!-- Social Media buttons (end)-->
 
               </ul>
             </li>
-            <!-- Nav-bar Drop down menu (End)-->
+            <!-- Top nav-bar Drop down menu (end)-->
 
           </ul>
-          <!-- Nav-bar right side (End)-->
+          <!-- Top nav-bar right side (end)-->
 
         </div>
 
       </div>
     </nav>
+    <!-- Top nav bar (end) ======================================== -->
 
-    <div id='full-joke'>
-      <blockquote class='text-center'>
-        <h3><div id='joke'>"Write it. Shoot it. Publish it. Crochet it, saute it, whatever. MAKE."</div></h3>
-        <small><cite title="Source Title"><div id='joke-author'>Joss Whedon</div></cite></small>
-      </blockquote>
+
+    <!-- Quote-experience (start) ======================================== -->
+    <div class='text-center full-quote' id='full-quote-experience'>
+        <br>
+        <h3><div id='quote-experience'>"Experience is the teacher of all things"</div></h3>
+        <br>
+        <small><cite title="Source Title"><div id='quote-experience-author'>- Julius Caesar</div></cite></small>
+        <br>
     </div>
+    <!-- Quote-experience (end) ======================================== -->
 
-    <!-- Projects (start) -->
+    <br>
+    <br>
 
-    <!-- Solar cells in 6.152J (start) -->
-    <div class="container-fluid">
-      <h3 class='text-center'>Fabricated and tested solar cells in <a href='https://www.youtube.com/playlist?list=PLc-oZVRqCK37X9qB5LlSjUgv7H7rDY6OK'>6.152J</a></h3>
-      <br>
+    <!-- Main body (start) ======================================== -->
+    <div class='containter-fluid'>
       <div class='row'>
-        <div class="col-sm-6" align='right'>
-          <h5>When </h5><p>Spring of Junior year</p>
-          <h5>Where </h5><p>The mit microsystems lab (<a href='http://www-mtl.mit.edu/'>MTL</a>)</p>
-          <h5>Why </h5>Part of the <p></p>
-          <h5>Why </h5><p></p>
+
+        <!-- Left nav bar (start) ======================================== -->
+        <div class="col-md-2" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+            <ul class="nav bs-docs-sidenav fixed">
+              
+              <!-- Research & Internships (start) -->
+              <li>
+                <a href="#title-internship">Research &amp; Internships</a>
+                <ul class="nav" id='sidenav-internship'>
+                  <li><a href="#title-internship-BAH">
+                    <img src='http://www.boozallen.com/media/image/bah-share-default-icon-512.png' height="20px" align="middle">&nbsp;&nbsp;&nbsp; Booz Allen Hamilton</a></li>
+                  <li><a href="#title-internship-BAH">
+                    <img src='http://sri-uq.kaust.edu.sa/PublishingImages/Workshop/kaust_logo3.png' height="20px" align="middle">&nbsp;&nbsp;&nbsp; KAUST</a></li>
+                  <li><a href="#title-internship-BAH">
+                    <img src='http://logonoid.com/images/mit-logo.png' height="20px" align="middle">&nbsp;&nbsp;&nbsp; Quantum Computing</a></li>
+                  <li><a href="#title-internship-BAH">
+                    <img src='http://logonoid.com/images/mit-logo.png' height="20px" align="middle">&nbsp;&nbsp;&nbsp; Reacting Gas Dynamics</a></li>
+                </ul>
+              </li>
+              <!-- Research & Internships (end) -->
+
+              <!-- Workshops & Seminars (start) -->
+              <li>
+                <a href="#title-seminar">Workshops &amp; Seminars</a>
+                <ul class="nav" id='sidenav-seminar'>
+                  <li><a href="#title-seminar-EDAD">
+                    <img src='http://logonoid.com/images/mckinsey-and-company-logo.png' height="25" align="middle">&nbsp;&nbsp; EDAD Program</a></li>
+                  <li><a href="#title-seminar-EDAD">
+                    <img src='http://logonoid.com/images/mit-logo.png' height="25" align="middle">&nbsp;&nbsp; RLE Photonics</a></li>
+                </ul>
+              </li>
+              <!-- Workshops & Seminars (end) -->
+
+              <!-- Competitions (start) -->
+              <li>
+                <a href="#title-comp"> Competitions </a>
+                <ul class="nav" id='sidenav-comp'>
+                  <li><a href="#title-comp-MakeMIT">
+                    <img src='http://logonoid.com/images/mit-logo.png' height="25" align="middle">&nbsp;&nbsp; MakeMIT 2015</a></li>
+                </ul>
+              </li>
+              <!-- Competitions (end) -->
+
+            </ul>
+          </nav>
         </div>
-        <div class="col-sm-6">
-          <div class='image_holder' align="right">
-            <img class='img-responsive' style ='float' src="Images/projects/Solar cell.jpg" />
+        <!-- Left nav bar (end) ======================================== -->
+
+        <!-- Right content (start) ======================================== -->
+        <div class='col-md-10' role='main'>
+
+          <!-- Research & Internships section (start) ======================================== -->
+          <div id='section-internship'>
+            <h2 class='text-center content-title' id='title-internship'>Research &amp; Internships</h2>
+            <br>
+
+            <!-- Booz Allen Hamilton (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-internship-BAH'><img src='http://www.boozallen.com/media/image/bah-share-default-icon-512.png' height="30" align="middle">&nbsp; Booz Allen Hamilton</h3>
+              <br>
+
+              <div class='row'>
+                <div class="col-md-3">
+                  <h4 class='content-subtitle text-center'>Title </h4>
+                  <h5 class='pad-text'>Intern Research Consultant</h5>
+                </div>
+
+                <div class="col-md-4">
+                  <h4 class='content-subtitle text-center'>Supervisor(s)</h4>
+                  <ul>
+                    <li><h5>Principle. Johnny Ayoub</h5></li>
+                    <li><h5>Project Manager. Emily Hunt</h5></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-5">
+                  <h4 class='content-subtitle text-center'>Project</h4>
+                  <h5 class='pad-text'>Analysis and synthesis of a new legal and monetary framework for the Saudi Arabian desalination industry</h5>
+                </div>
+              </div>
+
+              <br>
+
+              <div class='row'>
+                <div class='col-md-6'>
+                  <img class='img-responsive img-left center-img' style ='float' align="middle" src="Images/Cover-me.jpg" />
+                </div>
+
+                <div class='col-md-6'>
+                  <h4 class='content-subtitle text-center'>Roles</h4>
+                  <ul>
+                    <li><h5>Conducted interviews</h5></li>
+                    <li><h5>Gathered and tracked sensitive data</h5></li>
+                    <li><h5>Synthesized data and analyzed trends</h5></li>
+                    <li><h5>Used MS Office to produce presentation slide and </h5></li>
+                  </ul>
+                </div>
+                
+              </div>
+                
+              <!-- Booz Allen Hamilton learned (start) -->
+              <div class='row'>
+
+                <!-- MIT physics (start) -->
+                <div class="col-md-6">
+                  <h4>B.S. Physics</h4>
+                  <h6>(4.5/5.0)</h6>
+                  <br>
+                  <h5>Relevant courses:</h5>
+                  <ul>
+                    <li>8.225 Physics in the 20th Century</li>
+                    <li>8.044 Statistical Physics I</li>
+                    <li>8.04 Quantum Physics I</li>
+                    <li>8.223 Classical Mechanics II</li>
+                    <li>8.033 Relativity</li>
+                    <li>8.03 Physics III</li>
+                    <li>8.02 Physics II</li>
+                    <li>8.01 Physics I</li>
+                  </ul>
+                </div>
+                <!-- MIT physics (end) -->
+
+                <!-- MIT EE (start) -->
+                <div class="col-md-6">
+                  <h4>B.E. Electrical and Electronics Engineering</h4>
+                  <h6>(4.5/5.0)</h6>
+                  <br>
+                  <h5>Relevant courses:</h5>
+                  <ul>
+                    <li>6.013 Electromagnetics and Applications</li>
+                    <li>6.007 Electromagnetic Energy</li>
+                    <li>6.003 Signals and Systems</li>
+                    <li>6.002 Circuits and Electronics</li>
+                    <li>6.117 Introduction to EECS Lab Skills</li>
+                    <li>6.02 Introduction to EECS II</li>
+                    <li>6.01 Introduction to EECS I</li>
+                  </ul>
+                </div>
+                <!-- MIT EE (end) -->
+
+              </div>
+              <!-- MIT majors (end) -->
+
+            </div>
+            <!-- MIT (end) -->
+
           </div>
+          <!-- Research & Internships section (end) ======================================== -->
+
+          <br>
+          <br>
+
+          <!-- Workshops & Seminars section (start) ======================================== -->
+          <div id='section-seminar'>
+            <h2 class='text-center content-title' id='title-seminar'>Workshops &amp; Seminars</h2>
+            <br>
+
+            <!-- JHU (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-High-JHU'><img src='http://brand.jhu.edu/content/uploads/2014/06/university.shield.small_.blue_.png' width="35" height="35" align="middle">&nbsp; Johns Hopkins University</h3>
+              <br>
+              <h4>I've had the chance to take college courses during the summer of 2010 and 2012, prior to attending MIT, as part of <a href='http://pages.jh.edu/summer/precollege/'>Johns Hopkins Pre-College Summer Program</a></h4>
+              <br>
+                
+              <!-- JHU summers (start) -->
+              <div class='row'>
+
+                <!-- JHU 2010 (start) -->
+                <div class="col-md-6">
+                  <h4>Summer Program 2010</h4>
+                  <h6></h6>
+                  <br>
+                  <h5>Relevant courses:</h5>
+                  <ul>
+                    <li>180.101 Elem Of Macroeconomics</li>
+                    <li>110.105 Intro To Calculus</li>
+                  </ul>
+                </div>
+                <!-- JHU 2010 (end) -->
+
+                <!-- JHU 2012 (start) -->
+                <div class="col-md-6">
+                  <h4>Summer Program 2012</h4>
+                  <h6></h6>
+                  <br>
+                  <h5>Relevant courses:</h5>
+                  <ul>
+                    <li>150.309 Into to Philosophy of Physics</li>
+                    <li>600.107.11 Intro to Programming in Java</li>
+                  </ul>
+                </div>
+                <!-- JHU 2012 (end) -->
+
+              </div>
+              <!-- JHU summers (end) -->
+
+            </div>
+            <!-- JHU (end) -->
+
+          </div>
+          <!-- Workshops & Seminars section (end) ======================================== -->
+
+          <br>
+          <br>
+
+          <!-- Competitions section (start) ======================================== -->
+          <div id='section-comp'>
+            <h2 class='text-center content-title' id='title-comp'>Competitions</h2>
+            <br>
+
+            <!-- JHU (start) -->
+            <div class="container-fluid">
+              <h3 class='text-center content-subtitle' id='title-High-JHU'><img src='http://brand.jhu.edu/content/uploads/2014/06/university.shield.small_.blue_.png' width="35" height="35" align="middle">&nbsp; Johns Hopkins University</h3>
+              <br>
+              <h4>I've had the chance to take college courses during the summer of 2010 and 2012, prior to attending MIT, as part of <a href='http://pages.jh.edu/summer/precollege/'>Johns Hopkins Pre-College Summer Program</a></h4>
+              <br>
+                
+              <!-- JHU summers (start) -->
+              <div class='row'>
+
+                <!-- JHU 2010 (start) -->
+                <div class="col-md-6">
+                  <h4>Summer Program 2010</h4>
+                  <h6></h6>
+                  <br>
+                  <h5>Relevant courses:</h5>
+                  <ul>
+                    <li>180.101 Elem Of Macroeconomics</li>
+                    <li>110.105 Intro To Calculus</li>
+                  </ul>
+                </div>
+                <!-- JHU 2010 (end) -->
+
+                <!-- JHU 2012 (start) -->
+                <div class="col-md-6">
+                  <h4>Summer Program 2012</h4>
+                  <h6></h6>
+                  <br>
+                  <h5>Relevant courses:</h5>
+                  <ul>
+                    <li>150.309 Into to Philosophy of Physics</li>
+                    <li>600.107.11 Intro to Programming in Java</li>
+                  </ul>
+                </div>
+                <!-- JHU 2012 (end) -->
+
+              </div>
+              <!-- JHU summers (end) -->
+
+            </div>
+            <!-- JHU (end) -->
+
+          </div>
+          <!-- Competitions section (end) ======================================== -->
+
         </div>
+        <!-- Right content (end) ======================================== -->
+
       </div>
     </div>
-    <!-- Solar cells in 6.152J (end) -->
 
-    <!-- Infinite door (start) -->
-    <div class="container-fluid">
-      <h3 class='text-center'>Designed and built an <a href='https://en.wikipedia.org/wiki/Infinity_mirror'>infinite</a> door for my room</h3>
-      <br>
-      <div class='row'>
-        <div class="col-sm-6">
-          <div class='image_holder' align="right">
-            <img class='img-responsive' style ='float' src="Images/projects/Infinite door.jpg" />
-          </div>
-        </div>
-        <div class="col-sm-6" align='left'>
-          <h5>When </h5><p>Spring of Junior year</p>
-          <h5>Where </h5><p>The mit microsystems lab (<a href='http://www-mtl.mit.edu/'>MTL</a>)</p>
-          <h5>Why </h5>Part of the <p></p>
-          <h5>Skills learned </h5><p></p>
-          <h5>More details </h5><p></p>
-        </div>
-      </div>
-    </div>
-    <!-- Infinite door (end) -->
-
-    <!-- Heart beat monitor (start) -->
-    <div class="container-fluid">
-      <h3 class='text-center'>Wired and coded a <a href='https://www.dropbox.com/sh/ogts3amunwewyh6/AACL5R7XndePDSOdkrnjHL2fa?dl=0'>?heart?</a> beat monitor in ???</h3>
-      <br>
-      <div class='row'>
-        <div class="col-sm-6" align='right'>
-          <h5>When </h5><p>Spring of Junior year</p>
-          <h5>Where </h5><p>The mit microsystems lab (<a href='http://www-mtl.mit.edu/'>MTL</a>)</p>
-          <h5>Why </h5>Part of the <p></p>
-          <h5>Skills learned </h5><p></p>
-          <h5>More details </h5><p></p>
-        </div>
-        <div class="col-sm-6">
-          <div class='image_holder' align="right">
-            <img class='img-responsive' style ='float' src="Images/projects/Heart beat.jpg" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Heart beat monitor (end) -->
-
-    <!-- Pygame (start) -->
-    <div class="container-fluid">
-      <h3 class='text-center'>Designed and coded a <a href='#'>game</a> for <a href='#'>6.090</a></h3>
-      <br>
-      <div class='row'>
-        <div class="col-sm-6">
-          <div class='image_holder' align="right">
-            <img class='img-responsive' style ='float' src="Images/projects/Infinite door.jpg" />
-          </div>
-        </div>
-        <div class="col-sm-6" align='left'>
-          <h5>When </h5><p>Spring of Junior year</p>
-          <h5>Where </h5><p>The mit microsystems lab (<a href='http://www-mtl.mit.edu/'>MTL</a>)</p>
-          <h5>Why </h5>Part of the <p></p>
-          <h5>Skills learned </h5><p></p>
-          <h5>More details </h5><p></p>
-        </div>
-      </div>
-    </div>
-    <!-- Pygame (end) -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Main body (end) ======================================== -->
 
 
+
+
+    <!-- JS imports (start) ======================================== -->
 
     <!-- Import JQuery(min) library from Google from url -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -189,12 +411,20 @@
     <!-- Import Bootstrap js(min) library from url -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <!-- Import JQuery UI (min) library from url -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
     <!-- Import Ajax js(min) library from url --><!--
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     -->
 
+    <!-- Import JQuery Visible plug in from file -->
+    <script src='jquery-visible/jquery.visible.min.js'></script>
+
     <!-- Import personal js from file -->
-    <script type='text/javascript' src="script.js"></script>
+    <script type='text/javascript' src="script-experience.js"></script>
+
+    <!-- JS imports (end) ======================================== -->
 
   </body>
 </html>
