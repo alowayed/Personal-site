@@ -18,39 +18,39 @@ $(document).ready(function(){
 			/* Fix nav-bar while scrolling (end) */
 
 
-			var internshipTop = $('#section-internship').offset().top;
-			var seminarTop = $('#section-seminar').offset().top;
-			var compTop = $('#section-comp').offset().top;
+			var physicalTop = $('#section-physical').offset().top;
+			var digitalTop = $('#section-digital').offset().top;
+			var bothTop = $('#section-both').offset().top;
 
-			/* Fade in internship-section, fade out seminar-section (start) */
-			if (currentScroll <= (seminarTop - screen.height/2)) {
-				$('#sidenav-internship').fadeIn(500);
-				$('#sidenav-seminar').fadeOut(500, function(){
-		    		$('#sidenav-seminar').hide();
+			/* Fade in physical-section, fade out digital-section (start) */
+			if (currentScroll <= (digitalTop - screen.height/2)) {
+				$('#sidenav-physical').fadeIn(500);
+				$('#sidenav-digital').fadeOut(500, function(){
+		    		$('#sidenav-digital').hide();
 		    	});
 			}
-			/* Fade in internship-section, fade out seminar-section (end) */
+			/* Fade in physical-section, fade out digital-section (end) */
 
-			/* Fade in seminar-section, fade out internship and comp-section (start) */
-			else if ((currentScroll >= (seminarTop - screen.height/2)) && (currentScroll <= (compTop - screen.height/2))){
-				$('#sidenav-internship').fadeOut(500, function(){
-		    		$('#sidenav-internship').hide();
+			/* Fade in digital-section, fade out physical and both-section (start) */
+			else if ((currentScroll >= (digitalTop - screen.height/2)) && (currentScroll <= (bothTop - screen.height/2))){
+				$('#sidenav-physical').fadeOut(500, function(){
+		    		$('#sidenav-physical').hide();
 		    	});
-				$('#sidenav-seminar').fadeIn(500);
-				$('#sidenav-comp').fadeOut(500, function(){
-		    		$('#sidenav-comp').hide();
+				$('#sidenav-digital').fadeIn(500);
+				$('#sidenav-both').fadeOut(500, function(){
+		    		$('#sidenav-both').hide();
 		    	});
 			}
-			/* Fade in EE-section, fade out CS and MechE-section (end) */
+			/* Fade in digital-section, fade out physical and both-section (end) */
 
-			/* Fade in Business-section, fade out Lead and Comm-section (start) */
+			/* Fade in both-section, fade out digital-section (start) */
 			else {
-				$('#sidenav-comp').fadeIn(500);
-				$('#sidenav-seminar').fadeOut(500, function(){
-		    		$('#sidenav-seminar').hide();
+				$('#sidenav-both').fadeIn(500);
+				$('#sidenav-digital').fadeOut(500, function(){
+		    		$('#sidenav-digital').hide();
 		    	});
 			}
-			/* Fade in Business-section, fade out Lead and Comm-section (end) */
+			/* Fade in both-section, fade out digital-section (end) */
 		    
 	    }
 	    /* When scrolling through content (end) */
@@ -61,11 +61,11 @@ $(document).ready(function(){
 	    		position: 'static',
 	    		'text-indent': '1em',
 	    	});
-	    	$('#sidenav-internship').fadeOut(500, function(){
-		    	$('#sidenav-internship').hide();
+	    	$('#sidenav-physical').fadeOut(500, function(){
+		    	$('#sidenav-physical').hide();
 		    });
-		    $('#sidenav-seminar').fadeOut(500, function(){
-		    	$('#sidenav-seminar').hide();
+		    $('#sidenav-digital').fadeOut(500, function(){
+		    	$('#sidenav-digital').hide();
 		    });
 	    }
 	    /* When at the top of the page (end) */
