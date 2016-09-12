@@ -38,6 +38,10 @@ html {
   html { font-size: 13px; }
 }
 
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
 body {
 	padding-top: 70px;
 
@@ -171,6 +175,12 @@ blockquote {
 #full-quote-skills {
 	background-color: #B4E8BA;
 }
+#full-quote-hobbies {
+	background: url("Images/spices.jpeg");
+	background-size: 100%;
+	opacity: 1;
+}
+
 /* Quote colors (end) */
 
 /* Block quote (end) ============================== */
